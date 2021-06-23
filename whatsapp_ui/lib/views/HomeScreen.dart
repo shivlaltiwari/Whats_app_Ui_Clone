@@ -41,10 +41,7 @@ class _HomeScreenState extends State<HomeScreen>  with SingleTickerProviderState
             padding: const EdgeInsets.all(8.0),
             child: Icon(Icons.search_rounded),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.more_vert_rounded),
-          )
+          Icon(Icons.more_vert_rounded)
         ],
       ),
       body: TabBarView(
