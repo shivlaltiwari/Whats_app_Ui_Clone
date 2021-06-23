@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/Models/ChatsModels.dart';
+import 'package:whatsapp_ui/pages/message/message.dart';
 class ChatsScreen extends StatelessWidget {
   const ChatsScreen({ Key? key }) : super(key: key);
 
@@ -12,7 +13,7 @@ class ChatsScreen extends StatelessWidget {
           children: [
             InkWell(
               onTap: (){
-                print("object");
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Message()));
               },
               child: ListTile(
                 leading: CircleAvatar(
